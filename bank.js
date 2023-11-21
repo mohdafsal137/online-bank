@@ -17,7 +17,7 @@ alert('fill all Datas')
         else{
             localStorage.setItem(bank.acno,JSON.stringify(bank))
             alert('new account created sucessfully')
-            window.location="./login.html"
+            window.location="./index2.html"
         }
     }
 
@@ -38,7 +38,7 @@ function signin(){
                 localStorage.setItem('login',JSON.stringify(bankk))
                 alert('login sucessful')
 
-                window.location="./home.html"
+                window.location="./index1.html"
             }
             else{
                 alert('incorrect password')
@@ -46,7 +46,7 @@ function signin(){
         }
         else{
             alert('account does not found. register new account')
-            window.location="./register.html"
+            window.location="./index3.html"
         }
     }
 }
@@ -109,6 +109,6 @@ alert('fill all details')
 //log out
 function logout() {
     localStorage.clear()
-    window.location="./bank.html"
+    window.location="./index.html"
 }
 
